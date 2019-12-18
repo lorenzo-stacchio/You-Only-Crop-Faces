@@ -5,8 +5,9 @@ import shutil
 import csv
 
 if __name__ == '__main__':
-    image_path = 'C:\\Users\\Lorenzo Stacchio\\Downloads\\WIDER_test\\images'
-    mat2 = scipy.io.loadmat('C:\\Users\\Lorenzo Stacchio\\Downloads\\wider_face_split\\wider_face_test.mat')
+    image_path = 'C:\\Users\\Lorenzo Stacchio\\Downloads\\WIDER_val\\images'
+    mat2 = scipy.io.loadmat('C:\\Users\\Lorenzo Stacchio\\Desktop\\Machine_learning_project\\dataset\\test_set'
+                            '\\wider_face_val.mat')
     # Print caratteristiche file mat
     # for k in mat2:
     #    print(k)
@@ -30,15 +31,15 @@ if __name__ == '__main__':
                 # print(image_path + "\\" + dir_name + "\\" + str(single_photo_filename[0][0]) + ".jpg")
     print(len(file_description))
     #print(file_description)
-    with open("C:\\Users\\Lorenzo Stacchio\\Downloads\\output.csv", "w", newline='') as f:
-        csv_out = csv.writer(f)
-        csv_out.writerow(['filename', 'labels'])
-        for row in file_description:
-            csv_out.writerow(row)
+    #with open("C:\\Users\\Lorenzo Stacchio\\Desktop\\Machine_learning_project\\dataset\\train_set\\output.csv", "w", newline='') as f:
+    #    csv_out = csv.writer(f)
+    #    csv_out.writerow(['filename', 'labels'])
+    #    for row in file_description:
+    #        csv_out.writerow(row)
     # Copia e incolla tutte le foto su un'altra directory a mia scelta
     # Copy all the files to another directory
     if True: #made to execute or no execute this code
         for file_name,values in file_description:
-            shutil.copy(file_name, 'C:\\Users\\Lorenzo Stacchio\\Downloads\\immagini_scremate')
+            shutil.copy(file_name, 'C:\\Users\\Lorenzo Stacchio\\Desktop\\Machine_learning_project\\dataset\\test_set\\images')
 
     # Write file description
