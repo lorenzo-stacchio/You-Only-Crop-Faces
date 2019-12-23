@@ -2,3 +2,7 @@
 /venv/*
 /dataset/*
 /__pycache__/*
+first_CNN.ipynb
+transfer_learning.ipynb
+test.jpg
+/.ipynb_checkpoints/*
