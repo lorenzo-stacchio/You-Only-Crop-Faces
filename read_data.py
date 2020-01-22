@@ -1,8 +1,10 @@
 import scipy.io
+import os
 from os import listdir
 from os.path import isfile, join
 import shutil
 import csv
+import time
 
 
 def get_images_with_one_face_train_val(image_path, mat_path, output_path_val, output_path_train):
@@ -33,11 +35,13 @@ def get_images_with_one_face_train_val(image_path, mat_path, output_path_val, ou
             pair_photo_filename = zip(bbx[0], f_l[0])
             for bbx_single_photo, single_photo_filename in pair_photo_filename:
                 if len(bbx_single_photo[0]) == 1:
-                    # print(bbx_single_photo)
-                    file_description.append((str(single_photo_filename[0][0]) + ".jpg"
-                                             , list(list(bbx_single_photo[0])[0])))
-                    shutil.copy(image_path + "\\" + dir_name + "\\" + str(single_photo_filename[0][0]) + ".jpg",
-                                zip_training[1])
+                    a = all(e == 0 for e in bbx_single_photo[0][0])
+                    if not a:
+                        # print(bbx_single_photo)
+                        file_description.append((str(single_photo_filename[0][0]) + ".jpg"
+                                                 , list(list(bbx_single_photo[0])[0])))
+                        shutil.copy(image_path + "\\" + dir_name + "\\" + str(single_photo_filename[0][0]) + ".jpg",
+                                    zip_training[1])
         print(len(file_description))
         with open(zip_training[1] + "\\output.csv", "w", newline='') as f:
             csv_out = csv.writer(f)
@@ -79,6 +83,23 @@ def get_images_with_one_face_test(image_path, mat_path, output_path):
 
 
 if __name__ == '__main__':
-    get_images_with_one_face_train_val(".\\dataset\\WIDER_train\\images", ".\\dataset\\wider_face_split\\wider_face_train.mat",
-                                       ".\\dataset\\val", ".\\dataset\\train")
+    if os.path.exists(".\\dataset\\val"):
+        shutil.rmtree(".\\dataset\\val")
+        os.makedirs(".\\dataset\\val")
+    else:
+        os.makedirs(".\\dataset\\val")
+
+    if os.path.exists(".\\dataset\\test"):
+        shutil.rmtree(".\\dataset\\test")
+        os.makedirs(".\\dataset\\test")
+    else:
+        os.makedirs(".\\dataset\\test")
+
+    if os.path.exists(".\\dataset\\train"):
+        shutil.rmtree(".\\dataset\\train")
+        os.makedirs(".\\dataset\\train")
+    else:
+        os.makedirs(".\\dataset\\train")
+
+    get_images_with_one_face_train_val(".\\dataset\\WIDER_train\\images", ".\\dataset\\wider_face_split\\wider_face_train.mat", ".\\dataset\\val", ".\\dataset\\train")
     get_images_with_one_face_test(".\\dataset\\WIDER_val\\images", ".\\dataset\\wider_face_split\\wider_face_val.mat", ".\\dataset\\test")
