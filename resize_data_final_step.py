@@ -17,7 +17,7 @@ image_paths_and_description_file = [(".\\dataset\\train",
                                      ".\\dataset\\val\\output_final.csv")
                                     ]
 
-WIDTH_SCALE, HEIGHT_SCALE = 300, 300
+WIDTH_SCALE, HEIGHT_SCALE = 224, 224
 
 IMG_SIZE = 224
 IMG_SIZE_pre_processing = 256
