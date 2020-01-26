@@ -6,7 +6,6 @@ import shutil
 import csv
 import time
 
-
 def get_images_with_one_face_train_val(image_path, mat_path, output_path_val, output_path_train):
     mat2 = scipy.io.loadmat(mat_path)
 
