@@ -6,15 +6,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
-image_paths_and_description_file = [(".\\dataset\\train",
-                                     ".\\dataset\\train\\output.csv",
-                                     ".\\dataset\\train\\output_final.csv"),
-                                    (".\\dataset\\test",
-                                     ".\\dataset\\test\\output.csv",
-                                     ".\\dataset\\test\\output_final.csv"),
-                                    (".\\dataset\\val",
-                                     ".\\dataset\\val\\output.csv",
-                                     ".\\dataset\\val\\output_final.csv")
+image_paths_and_description_file = [(".\\dataset\\NUOVO\\val",
+                                     ".\\dataset\\NUOVO\\val\\output.csv",
+                                     ".\\dataset\\NUOVO\\val\\output_final.csv"),
+                                    (".\\dataset\\NUOVO\\train",
+                                     ".\\dataset\\NUOVO\\train\\output.csv",
+                                     ".\\dataset\\NUOVO\\train\\output_final.csv"),
+                                    (".\\dataset\\NUOVO\\test",
+                                     ".\\dataset\\NUOVO\\test\\output.csv",
+                                     ".\\dataset\\NUOVO\\test\\output_final.csv")
                                     ]
 
 WIDTH_SCALE, HEIGHT_SCALE = 224, 224
@@ -134,47 +134,52 @@ def compare_and_add_data_augmentation_to_dataframe(image_path, df, old_row, new_
 
 def save_image(img, file_name, image_path, df, labels):
     img_reduced, new_labels = reduce_image_size_and_return_reduced_labels(img, labels, WIDTH_SCALE, HEIGHT_SCALE)
-    dict_to_append = {"filename": file_name, "x_start": new_labels[0], "y_start": new_labels[1], "width": new_labels[2], "height": new_labels[3]}
+    dict_to_append = {"image_id": file_name, "x_1": new_labels[0], "y_1": new_labels[1], "width": new_labels[2], "height": new_labels[3]}
     df = df.append(dict_to_append, ignore_index=True)
-
     #draw = ImageDraw.Draw(img_reduced)
     #draw.rectangle(((new_labels[0], new_labels[1]), (new_labels[0] + new_labels[2], new_labels[1] + new_labels[3])), outline="Red")
-
-    img_reduced.save(image_path + "//" + file_name)  # this is a pillow image
+    #img_reduced.show()
+    #print(image_path + "\\" + file_name)
+    img_reduced.save(image_path + "\\" + file_name)  # this is a pillow image
     return df
 
 
 if __name__ == '__main__':
     for el in image_paths_and_description_file:
         print("Processing " + el[0])
-        data_frame_finale = pd.DataFrame(columns=["filename", "labels", "x_start", "y_start", "width", "height"])
+        data_frame_finale = pd.DataFrame(columns=["image_id", "x_1", "y_1", "width", "height"])
         data_frame_description_step2 = pd.read_csv(el[1])
-        data_frame_description_step2["x_start"] = 0
-        data_frame_description_step2["y_start"] = 0
-        data_frame_description_step2["width"] = 0
-        data_frame_description_step2["height"] = 0
+        #data_frame_finale["x_1"] = 0
+        #data_frame_finale["y_1"] = 0
+        #data_frame_finale["width"] = 0
+        #data_frame_finale["height"] = 0
+        count = 0
         for index, row in data_frame_description_step2.iterrows():
-            if index % 100 == 0:
+            if index % 100 == 0 and index != 0:
                 print("Processed " + str(index) + " images")
-            image_path = el[0] + "//" + row["filename"]
-
+            image_path = el[0] + "//" + row["image_id"]
+            #print(row)
             #default image
             default_img = Image.open(image_path, 'r')
-            default_labels = ast.literal_eval(row["labels"])
-            data_frame_finale = save_image(default_img, row["filename"], el[0], data_frame_finale, default_labels)
-
+            #ast.literal_eval(row["labels"])
+            default_labels = row["x_1"], row["y_1"], row["width"], row["height"]
+            data_frame_finale = save_image(default_img, row["image_id"], el[0], data_frame_finale, default_labels)
+            count = count +1
+            #if count==3:
+            #   break
+        #break
             #flipped image
-            flipped_img, flipped_labels = flip(default_img, default_labels.copy())
-            cropped_img, cropped_labels = crop_image_centered_face(flipped_img, flipped_labels.copy())
-            new_file_name = row["filename"].split(".")[0] + "_flipped.jpg"
-            data_frame_finale = save_image(cropped_img, new_file_name, el[0], data_frame_finale, cropped_labels)
+            #flipped_img, flipped_labels = flip(default_img, default_labels.copy())
+            #cropped_img, cropped_labels = crop_image_centered_face(flipped_img, flipped_labels.copy())
+            #new_file_name = row["filename"].split(".")[0] + "_flipped.jpg"
+            #data_frame_finale = save_image(cropped_img, new_file_name, el[0], data_frame_finale, cropped_labels)
 
             #cropped image
-            padded_img, padded_labels = pad_image(default_img, default_labels.copy())
-            cropped_img, cropped_labels = crop_image_centered_face(padded_img, padded_labels.copy())
-            new_file_name = row["filename"].split(".")[0] + "_cropped_.jpg"
-            data_frame_finale = save_image(cropped_img, new_file_name, el[0], data_frame_finale, cropped_labels)
+            #padded_img, padded_labels = pad_image(default_img, default_labels.copy())
+            #cropped_img, cropped_labels = crop_image_centered_face(padded_img, padded_labels.copy())
+            #new_file_name = row["filename"].split(".")[0] + "_cropped_.jpg"
+            #data_frame_finale = save_image(cropped_img, new_file_name, el[0], data_frame_finale, cropped_labels)
 
 
-        del data_frame_finale["labels"]
+        #del data_frame_finale["labels"]
         data_frame_finale.to_csv(el[2])
