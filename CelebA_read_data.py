@@ -4,11 +4,10 @@ import shutil
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-bb_file_path = ".\\dataset\\NUOVO\\CelebA\\Anno\\"
+bb_file_path = ".\\dataset\\NUOVO\\CelebA2\\CelebA\\Anno"
 bb_file_name = "list_bbox_celeba.csv"
 bb_new_file_name = "parsed_list_bbox_celeba.csv"
-image_path = ".\\dataset\\NUOVO\\CelebA\\Img\\img_align_celeba"
-
+image_path = ".\\dataset\\NUOVO\\CelebA2\\CelebA\\Img\\img_celeba\\img_celeba\\img_celeba"
 
 def prepare_bb_txt_file():
     with open(bb_file_path + "\\" + bb_file_name, "r") as fr:
@@ -28,17 +27,21 @@ def prepare_images_and_csv():
 
     for df, path in zip([val, train, test], [".\\dataset\\NUOVO\\val", ".\\dataset\\NUOVO\\train", ".\\dataset\\NUOVO\\test"]):
         for index, row in df.iterrows():
+
             count += 1
             if count % 100 == 0:
                 print("Computed", count, " over ", len(dfs))
-
-            shutil.copy(image_path + "\\" + row['image_id'], path + "\\" + row['image_id'])
+            try: shutil.copy(image_path + "\\" + row['image_id'], path + "\\" + row['image_id'])
+            except:
+                print(row)
+                print("Some error with ", image_path + "\\" + row['image_id'], path + "\\" + row['image_id'])
 
         df.to_csv(path + "\\" + "output.csv")
 
 
 
 if __name__ == '__main__':
+    #prepare_bb_txt_file()
     if os.path.exists(".\\dataset\\NUOVO\\val"):
         shutil.rmtree(".\\dataset\\NUOVO\\val")
         os.makedirs(".\\dataset\\NUOVO\\val")
