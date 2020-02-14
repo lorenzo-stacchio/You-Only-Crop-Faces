@@ -80,33 +80,25 @@ if __name__ == '__main__':
             lineToWrite += calculate_box(row["x_1"], row["y_1"], row["width"], row["height"])
             file.write(lineToWrite + "\n")
 
-            #output = calculate_box(row["x_1"], row["y_1"], row["width"], row["height"])
-            #actual_dict = {"image_id": row["image_id"]}
-            #flat_output = [item for sublist in output for item in sublist]
-            # for el in range(len(flat_output)):
-            #    actual_dict[str(el)] = flat_output[el]
-            # new_df = new_df.append(actual_dict, ignore_index=True)
-
             # im = Image.open(".\\dataset\\NUOVO\\val\\" + row["image_id"], 'r')
             # draw = ImageDraw.Draw(im)
-            #
+            # values = calculate_box(row["x_1"], row["y_1"], row["width"], row["height"]).split(",")
             # left_top = (row["x_1"], row["y_1"])
             # bottom_right = (row["x_1"] + row["width"], row["y_1"] + row["height"])
+            # draw.rectangle(((left_top[0], left_top[1]), (bottom_right[0], bottom_right[1])), outline="Blue")
             # for i in range(BLOCKS_NUM):
             #     for j in range(BLOCKS_NUM):
-            #
-            #         #draw.point((new_x + (width / 2), new_y + (height / 2)), fill="White")
-            #         #draw.text((new_x + (width / 2), new_y + (height / 2)), text)
             #         index = int((i * BLOCKS_NUM) + j)
-            #         if output[index][0] == 1:
+            #         if values[index*5] == "1":
             #             draw.rectangle(((i * BLOCK_SIZE, j * BLOCK_SIZE),
             #                             (i * BLOCK_SIZE + BLOCK_SIZE, j * BLOCK_SIZE + BLOCK_SIZE)),
             #                            outline="Green")
-            #             draw.point((output[index][1], output[index][2]), fill="White")
+            #             #draw.point((float(values[index*5+1]), float(values[index*5+2])), fill="Yellow")
+            #             r = 2
+            #             draw.ellipse(   ( (float(values[index*5+1])-r, float(values[index*5+2])-r), (float(values[index*5+1])+r, float(values[index*5+2])+r) ), fill="Black"  )
             #         else:
             #             draw.rectangle(((i * BLOCK_SIZE, j * BLOCK_SIZE),
             #                             (i * BLOCK_SIZE + BLOCK_SIZE, j * BLOCK_SIZE + BLOCK_SIZE)),
-            #                            outline="Black")
+            #                            outline="Yellow")
             #
             # im.show()
-        #new_df.to_csv(el[3])
