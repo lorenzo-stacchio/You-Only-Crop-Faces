@@ -86,7 +86,7 @@ if __name__ == '__main__':
     non_faces_val, faces_val = zip(non_faces_x_val,non_faces_y_val),zip(faces_x_val,faces_y_val)
     non_faces_test, faces_test = zip(non_faces_x_test,non_faces_y_test),zip(faces_x_test,faces_y_test)
 
-    for tuple in [("train", non_faces_train,faces_train),("val",non_faces_val,faces_val),("test", non_faces_test,faces_test)]:
+    for tuple in [("train4", non_faces_train,faces_train),("val4",non_faces_val,faces_val),("test4", non_faces_test,faces_test)]:
          print("Writing:", tuple[0])
          write_csv(tuple[0],tuple[1],tuple[2])
     # with open('C:/Users/Lorenzo/Desktop/Università/Machine_learning_project/dataset/FACE_CLASSIFIER/dataset.csv' , mode='w', newline='') as file:
