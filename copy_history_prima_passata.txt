@@ -1,0 +1,871 @@
+Epoch 1/200
+1581/1580 [==============================] - 378s 239ms/step - loss: 89.3182 - val_loss: 232.5195
+val_iou: 0.641
+
+Epoch 00001: val_iou improved from -inf to 0.64100, saving model to model_val_iou_2.h5
+Epoch 2/200
+1581/1580 [==============================] - 356s 225ms/step - loss: 46.7321 - val_loss: 124.2467
+val_iou: 0.7318
+
+Epoch 00002: val_iou improved from 0.64100 to 0.73180, saving model to model_val_iou_2.h5
+Epoch 3/200
+1581/1580 [==============================] - 385s 243ms/step - loss: 39.6138 - val_loss: 111.5616
+val_iou: 0.7941
+
+Epoch 00003: val_iou improved from 0.73180 to 0.79410, saving model to model_val_iou_2.h5
+Epoch 4/200
+1581/1580 [==============================] - 377s 238ms/step - loss: 33.4430 - val_loss: 135.8228
+val_iou: 0.7531
+
+Epoch 00004: val_iou did not improve from 0.79410
+Epoch 5/200
+1581/1580 [==============================] - 399s 252ms/step - loss: 32.1464 - val_loss: 140.9754
+val_iou: 0.8163
+
+Epoch 00005: val_iou improved from 0.79410 to 0.81630, saving model to model_val_iou_2.h5
+Epoch 6/200
+1581/1580 [==============================] - 351s 222ms/step - loss: 26.9643 - val_loss: 34.2996
+val_iou: 0.8115
+
+Epoch 00006: val_iou did not improve from 0.81630
+Epoch 7/200
+1581/1580 [==============================] - 373s 236ms/step - loss: 25.5601 - val_loss: 111.5832
+val_iou: 0.7679
+
+Epoch 00007: val_iou did not improve from 0.81630
+Epoch 8/200
+1581/1580 [==============================] - 355s 225ms/step - loss: 20.7083 - val_loss: 11.4124
+val_iou: 0.8962
+
+Epoch 00008: val_iou improved from 0.81630 to 0.89620, saving model to model_val_iou_2.h5
+Epoch 9/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 20.3124 - val_loss: 35.8128
+val_iou: 0.8715
+
+Epoch 00009: val_iou did not improve from 0.89620
+Epoch 10/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 17.5397 - val_loss: 18.1460
+val_iou: 0.9019
+
+Epoch 00010: val_iou improved from 0.89620 to 0.90190, saving model to model_val_iou_2.h5
+Epoch 11/200
+1581/1580 [==============================] - 383s 242ms/step - loss: 19.0003 - val_loss: 19.3217
+val_iou: 0.9013
+
+Epoch 00011: val_iou did not improve from 0.90190
+Epoch 12/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 15.5749 - val_loss: 144.8202
+val_iou: 0.8924
+
+Epoch 00012: val_iou did not improve from 0.90190
+Epoch 13/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 17.0799 - val_loss: 12.8158
+val_iou: 0.9076
+
+Epoch 00013: val_iou improved from 0.90190 to 0.90760, saving model to model_val_iou_2.h5
+Epoch 14/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 13.2486 - val_loss: 20.3188
+val_iou: 0.9121
+
+Epoch 00014: val_iou improved from 0.90760 to 0.91210, saving model to model_val_iou_2.h5
+Epoch 15/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 13.0728 - val_loss: 24.1531
+val_iou: 0.8926
+
+Epoch 00015: val_iou did not improve from 0.91210
+Epoch 16/200
+1581/1580 [==============================] - 350s 221ms/step - loss: 14.8435 - val_loss: 51.8488
+val_iou: 0.8546
+
+Epoch 00016: val_iou did not improve from 0.91210
+Epoch 17/200
+1581/1580 [==============================] - 354s 224ms/step - loss: 14.2302 - val_loss: 54.0480
+val_iou: 0.9117
+
+Epoch 00017: val_iou did not improve from 0.91210
+Epoch 18/200
+1581/1580 [==============================] - 344s 217ms/step - loss: 11.1476 - val_loss: 14.7835
+val_iou: 0.9108
+
+Epoch 00018: val_iou did not improve from 0.91210
+
+Epoch 00018: ReduceLROnPlateau reducing learning rate to 0.00020000000949949026.
+Epoch 19/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 7.3192 - val_loss: 26.0874
+val_iou: 0.9277
+
+Epoch 00019: val_iou improved from 0.91210 to 0.92770, saving model to model_val_iou_2.h5
+Epoch 20/200
+1581/1580 [==============================] - 344s 218ms/step - loss: 6.3487 - val_loss: 10.6229
+val_iou: 0.9246
+
+Epoch 00020: val_iou did not improve from 0.92770
+Epoch 21/200
+1581/1580 [==============================] - 340s 215ms/step - loss: 5.7924 - val_loss: 10.0377
+val_iou: 0.9281
+
+Epoch 00021: val_iou improved from 0.92770 to 0.92810, saving model to model_val_iou_2.h5
+Epoch 22/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 5.3692 - val_loss: 8.5912
+val_iou: 0.9278
+
+Epoch 00022: val_iou did not improve from 0.92810
+Epoch 23/200
+1581/1580 [==============================] - 354s 224ms/step - loss: 4.9885 - val_loss: 11.4485
+val_iou: 0.9277
+
+Epoch 00023: val_iou did not improve from 0.92810
+Epoch 24/200
+1581/1580 [==============================] - 344s 218ms/step - loss: 4.6315 - val_loss: 17.9506
+val_iou: 0.9279
+
+Epoch 00024: val_iou did not improve from 0.92810
+Epoch 25/200
+1581/1580 [==============================] - 354s 224ms/step - loss: 4.3794 - val_loss: 8.3789
+val_iou: 0.9279
+
+Epoch 00025: val_iou did not improve from 0.92810
+Epoch 26/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 4.1019 - val_loss: 13.5852
+val_iou: 0.9268
+
+Epoch 00026: val_iou did not improve from 0.92810
+Epoch 27/200
+1581/1580 [==============================] - 375s 237ms/step - loss: 3.8712 - val_loss: 11.0118
+val_iou: 0.9264
+
+Epoch 00027: val_iou did not improve from 0.92810
+Epoch 28/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 3.6599 - val_loss: 28.2330
+val_iou: 0.9261
+
+Epoch 00028: val_iou did not improve from 0.92810
+Epoch 29/200
+1581/1580 [==============================] - 347s 219ms/step - loss: 3.4907 - val_loss: 9.9826
+val_iou: 0.9255
+
+Epoch 00029: val_iou did not improve from 0.92810
+Epoch 30/200
+1581/1580 [==============================] - 347s 220ms/step - loss: 3.3070 - val_loss: 11.6440
+val_iou: 0.9264
+
+Epoch 00030: val_iou did not improve from 0.92810
+Epoch 31/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 3.1129 - val_loss: 18.7152
+val_iou: 0.9265
+
+Epoch 00031: val_iou did not improve from 0.92810
+Epoch 32/200
+1581/1580 [==============================] - 342s 216ms/step - loss: 2.9844 - val_loss: 22.1332
+val_iou: 0.9259
+
+Epoch 00032: val_iou did not improve from 0.92810
+Epoch 33/200
+1581/1580 [==============================] - 344s 218ms/step - loss: 2.8759 - val_loss: 22.5162
+val_iou: 0.9266
+
+Epoch 00033: val_iou did not improve from 0.92810
+Epoch 34/200
+1581/1580 [==============================] - 344s 217ms/step - loss: 2.7597 - val_loss: 11.3181
+val_iou: 0.9267
+
+Epoch 00034: val_iou did not improve from 0.92810
+Epoch 35/200
+1581/1580 [==============================] - 351s 222ms/step - loss: 2.6644 - val_loss: 11.0089
+val_iou: 0.9259
+
+Epoch 00035: val_iou did not improve from 0.92810
+
+Epoch 00035: ReduceLROnPlateau reducing learning rate to 4.0000001899898055e-05.
+Epoch 36/200
+1581/1580 [==============================] - 347s 219ms/step - loss: 2.0815 - val_loss: 30.5832
+val_iou: 0.9279
+
+Epoch 00036: val_iou did not improve from 0.92810
+Epoch 37/200
+1581/1580 [==============================] - 360s 228ms/step - loss: 1.9611 - val_loss: 11.5550
+val_iou: 0.9277
+
+Epoch 00037: val_iou did not improve from 0.92810
+Epoch 38/200
+1581/1580 [==============================] - 390s 247ms/step - loss: 1.8978 - val_loss: 11.1960
+val_iou: 0.928
+
+Epoch 00038: val_iou did not improve from 0.92810
+Epoch 39/200
+1581/1580 [==============================] - 359s 227ms/step - loss: 1.8419 - val_loss: 9.3498
+val_iou: 0.928
+
+Epoch 00039: val_iou did not improve from 0.92810
+Epoch 40/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.8118 - val_loss: 12.9242
+val_iou: 0.9277
+
+Epoch 00040: val_iou did not improve from 0.92810
+Epoch 41/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.7659 - val_loss: 24.6610
+val_iou: 0.9277
+
+Epoch 00041: val_iou did not improve from 0.92810
+Epoch 42/200
+1581/1580 [==============================] - 370s 234ms/step - loss: 1.7392 - val_loss: 13.2353
+val_iou: 0.9276
+
+Epoch 00042: val_iou did not improve from 0.92810
+Epoch 43/200
+
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.7211 - val_loss: 13.0051
+val_iou: 0.9272
+
+Epoch 00043: val_iou did not improve from 0.92810
+Epoch 44/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 1.6874 - val_loss: 10.1315
+val_iou: 0.9275
+
+Epoch 00044: val_iou did not improve from 0.92810
+Epoch 45/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 1.6669 - val_loss: 13.5914
+val_iou: 0.9272
+
+Epoch 00045: val_iou did not improve from 0.92810
+
+Epoch 00045: ReduceLROnPlateau reducing learning rate to 8.000000525498762e-06.
+Epoch 46/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 1.5605 - val_loss: 13.8114
+val_iou: 0.9276
+
+Epoch 00046: val_iou did not improve from 0.92810
+Epoch 47/200
+1581/1580 [==============================] - 372s 235ms/step - loss: 1.5438 - val_loss: 5.4570
+val_iou: 0.9277
+
+Epoch 00047: val_iou did not improve from 0.92810
+Epoch 48/200
+1581/1580 [==============================] - 350s 221ms/step - loss: 1.5272 - val_loss: 10.8837
+val_iou: 0.9278
+
+Epoch 00048: val_iou did not improve from 0.92810
+Epoch 49/200
+1581/1580 [==============================] - 358s 226ms/step - loss: 1.5311 - val_loss: 11.8041
+val_iou: 0.9278
+
+Epoch 00049: val_iou did not improve from 0.92810
+Epoch 50/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.5145 - val_loss: 16.1554
+val_iou: 0.9277
+
+Epoch 00050: val_iou did not improve from 0.92810
+Epoch 51/200
+1581/1580 [==============================] - 348s 220ms/step - loss: 1.5190 - val_loss: 68.3712
+val_iou: 0.9275
+
+Epoch 00051: val_iou did not improve from 0.92810
+Epoch 52/200
+1581/1580 [==============================] - 350s 222ms/step - loss: 1.5123 - val_loss: 9.3134
+val_iou: 0.9276
+
+Epoch 00052: val_iou did not improve from 0.92810
+Epoch 53/200
+1581/1580 [==============================] - 350s 221ms/step - loss: 1.5013 - val_loss: 11.2580
+val_iou: 0.9275
+
+Epoch 00053: val_iou did not improve from 0.92810
+Epoch 54/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4895 - val_loss: 21.3712
+val_iou: 0.9277
+
+Epoch 00054: val_iou did not improve from 0.92810
+Epoch 55/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.5015 - val_loss: 128.8675
+val_iou: 0.9277
+
+Epoch 00055: val_iou did not improve from 0.92810
+Epoch 56/200
+1581/1580 [==============================] - 348s 220ms/step - loss: 1.4926 - val_loss: 10.7504
+val_iou: 0.9276
+
+Epoch 00056: val_iou did not improve from 0.92810
+Epoch 57/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4851 - val_loss: 10.4747
+val_iou: 0.9276
+
+Epoch 00057: val_iou did not improve from 0.92810
+
+Epoch 00057: ReduceLROnPlateau reducing learning rate to 1.6000001778593287e-06.
+Epoch 58/200
+1581/1580 [==============================] - 344s 218ms/step - loss: 1.4599 - val_loss: 6.7055
+val_iou: 0.9277
+
+Epoch 00058: val_iou did not improve from 0.92810
+Epoch 59/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4571 - val_loss: 13.1659
+val_iou: 0.9277
+
+Epoch 00059: val_iou did not improve from 0.92810
+Epoch 60/200
+1581/1580 [==============================] - 344s 217ms/step - loss: 1.4592 - val_loss: 10.2516
+val_iou: 0.9276
+
+Epoch 00060: val_iou did not improve from 0.92810
+Epoch 61/200
+1581/1580 [==============================] - 353s 223ms/step - loss: 1.4545 - val_loss: 10.9544
+val_iou: 0.9276
+
+Epoch 00061: val_iou did not improve from 0.92810
+Epoch 62/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4551 - val_loss: 36.6456
+val_iou: 0.9277
+
+Epoch 00062: val_iou did not improve from 0.92810
+Epoch 63/200
+1581/1580 [==============================] - 350s 221ms/step - loss: 1.4591 - val_loss: 15.6496
+val_iou: 0.9276
+
+Epoch 00063: val_iou did not improve from 0.92810
+Epoch 64/200
+1581/1580 [==============================] - 376s 238ms/step - loss: 1.4457 - val_loss: 14.7450
+val_iou: 0.9278
+
+Epoch 00064: val_iou did not improve from 0.92810
+Epoch 65/200
+1581/1580 [==============================] - 355s 224ms/step - loss: 1.4517 - val_loss: 11.3197
+val_iou: 0.9276
+
+Epoch 00065: val_iou did not improve from 0.92810
+Epoch 66/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4489 - val_loss: 10.1665
+val_iou: 0.9276
+
+Epoch 00066: val_iou did not improve from 0.92810
+Epoch 67/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4411 - val_loss: 14.0078
+val_iou: 0.9277
+
+Epoch 00067: val_iou did not improve from 0.92810
+
+Epoch 00067: ReduceLROnPlateau reducing learning rate to 3.200000264769187e-07.
+Epoch 68/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4398 - val_loss: 10.4676
+val_iou: 0.9277
+
+Epoch 00068: val_iou did not improve from 0.92810
+Epoch 69/200
+1581/1580 [==============================] - 344s 217ms/step - loss: 1.4389 - val_loss: 12.5440
+val_iou: 0.9277
+
+Epoch 00069: val_iou did not improve from 0.92810
+Epoch 70/200
+1581/1580 [==============================] - 351s 222ms/step - loss: 1.4389 - val_loss: 12.9487
+val_iou: 0.9277
+
+Epoch 00070: val_iou did not improve from 0.92810
+Epoch 71/200
+1581/1580 [==============================] - 344s 218ms/step - loss: 1.4407 - val_loss: 17.4402
+val_iou: 0.9276
+
+Epoch 00071: val_iou did not improve from 0.92810
+Epoch 72/200
+1581/1580 [==============================] - 347s 219ms/step - loss: 1.4410 - val_loss: 18.3718
+val_iou: 0.9277
+
+Epoch 00072: val_iou did not improve from 0.92810
+Epoch 73/200
+1581/1580 [==============================] - 361s 228ms/step - loss: 1.4420 - val_loss: 14.0069
+val_iou: 0.9277
+
+Epoch 00073: val_iou did not improve from 0.92810
+Epoch 74/200
+1581/1580 [==============================] - 348s 220ms/step - loss: 1.4402 - val_loss: 26.4900
+val_iou: 0.9276
+
+Epoch 00074: val_iou did not improve from 0.92810
+Epoch 75/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4396 - val_loss: 17.5384
+val_iou: 0.9277
+
+Epoch 00075: val_iou did not improve from 0.92810
+Epoch 76/200
+1581/1580 [==============================] - 349s 220ms/step - loss: 1.4413 - val_loss: 11.8177
+val_iou: 0.9277
+
+Epoch 00076: val_iou did not improve from 0.92810
+Epoch 77/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 1.4379 - val_loss: 11.1849
+val_iou: 0.9276
+
+Epoch 00077: val_iou did not improve from 0.92810
+
+Epoch 00077: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 78/200
+1581/1580 [==============================] - 348s 220ms/step - loss: 1.4429 - val_loss: 10.2944
+val_iou: 0.9276
+
+Epoch 00078: val_iou did not improve from 0.92810
+Epoch 79/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4396 - val_loss: 11.3299
+val_iou: 0.9277
+
+Epoch 00079: val_iou did not improve from 0.92810
+Epoch 80/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4342 - val_loss: 17.2032
+val_iou: 0.9277
+
+Epoch 00080: val_iou did not improve from 0.92810
+Epoch 81/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4400 - val_loss: 11.4361
+val_iou: 0.9277
+
+Epoch 00081: val_iou did not improve from 0.92810
+Epoch 82/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4445 - val_loss: 44.1559
+val_iou: 0.9276
+
+Epoch 00082: val_iou did not improve from 0.92810
+Epoch 83/200
+1581/1580 [==============================] - 349s 220ms/step - loss: 1.4395 - val_loss: 12.1056
+val_iou: 0.9277
+
+Epoch 00083: val_iou did not improve from 0.92810
+Epoch 84/200
+1581/1580 [==============================] - 349s 220ms/step - loss: 1.4365 - val_loss: 11.6124
+val_iou: 0.9277
+
+Epoch 00084: val_iou did not improve from 0.92810
+Epoch 85/200
+1581/1580 [==============================] - 368s 233ms/step - loss: 1.4432 - val_loss: 11.1877
+val_iou: 0.9277
+
+Epoch 00085: val_iou did not improve from 0.92810
+Epoch 86/200
+1581/1580 [==============================] - 370s 234ms/step - loss: 1.4383 - val_loss: 13.6012
+val_iou: 0.9277
+
+Epoch 00086: val_iou did not improve from 0.92810
+Epoch 87/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4372 - val_loss: 14.3413
+val_iou: 0.9277
+
+Epoch 00087: val_iou did not improve from 0.92810
+
+Epoch 00087: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 88/200
+
+1581/1580 [==============================] - 347s 219ms/step - loss: 1.4357 - val_loss: 133.6858
+val_iou: 0.9276
+
+Epoch 00088: val_iou did not improve from 0.92810
+Epoch 89/200
+1581/1580 [==============================] - 350s 221ms/step - loss: 1.4448 - val_loss: 9.4757
+val_iou: 0.9277
+
+Epoch 00089: val_iou did not improve from 0.92810
+Epoch 90/200
+1581/1580 [==============================] - 341s 216ms/step - loss: 1.4418 - val_loss: 9.5878
+val_iou: 0.9277
+
+Epoch 00090: val_iou did not improve from 0.92810
+Epoch 91/200
+1581/1580 [==============================] - 348s 220ms/step - loss: 1.4344 - val_loss: 10.8315
+val_iou: 0.9277
+
+Epoch 00091: val_iou did not improve from 0.92810
+Epoch 92/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4353 - val_loss: 15.3763
+val_iou: 0.9277
+
+Epoch 00092: val_iou did not improve from 0.92810
+Epoch 93/200
+1581/1580 [==============================] - 340s 215ms/step - loss: 1.4402 - val_loss: 43.2458
+val_iou: 0.9276
+
+Epoch 00093: val_iou did not improve from 0.92810
+Epoch 94/200
+1581/1580 [==============================] - 380s 240ms/step - loss: 1.4403 - val_loss: 13.5550
+val_iou: 0.9277
+
+Epoch 00094: val_iou did not improve from 0.92810
+Epoch 95/200
+1581/1580 [==============================] - 370s 234ms/step - loss: 1.4406 - val_loss: 19.7664
+val_iou: 0.9277
+
+Epoch 00095: val_iou did not improve from 0.92810
+Epoch 96/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4433 - val_loss: 16.1023
+val_iou: 0.9277
+
+Epoch 00096: val_iou did not improve from 0.92810
+Epoch 97/200
+1581/1580 [==============================] - 350s 221ms/step - loss: 1.4311 - val_loss: 18.2618
+val_iou: 0.9277
+
+Epoch 00097: val_iou did not improve from 0.92810
+
+Epoch 00097: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 98/200
+1581/1580 [==============================] - 354s 224ms/step - loss: 1.4296 - val_loss: 12.2706
+val_iou: 0.9277
+
+Epoch 00098: val_iou did not improve from 0.92810
+Epoch 99/200
+1581/1580 [==============================] - 344s 217ms/step - loss: 1.4353 - val_loss: 10.1526
+val_iou: 0.9277
+
+Epoch 00099: val_iou did not improve from 0.92810
+Epoch 100/200
+1581/1580 [==============================] - 344s 217ms/step - loss: 1.4410 - val_loss: 15.4785
+val_iou: 0.9277
+
+Epoch 00100: val_iou did not improve from 0.92810
+Epoch 101/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 1.4338 - val_loss: 13.2273
+val_iou: 0.9277
+
+Epoch 00101: val_iou did not improve from 0.92810
+Epoch 102/200
+1581/1580 [==============================] - 344s 218ms/step - loss: 1.4327 - val_loss: 9.3342
+val_iou: 0.9277
+
+Epoch 00102: val_iou did not improve from 0.92810
+Epoch 103/200
+1581/1580 [==============================] - 373s 236ms/step - loss: 1.4352 - val_loss: 10.3103
+val_iou: 0.9277
+
+Epoch 00103: val_iou did not improve from 0.92810
+Epoch 104/200
+1581/1580 [==============================] - 375s 237ms/step - loss: 1.4356 - val_loss: 11.8940
+val_iou: 0.9277
+
+Epoch 00104: val_iou did not improve from 0.92810
+Epoch 105/200
+1581/1580 [==============================] - 390s 246ms/step - loss: 1.4408 - val_loss: 15.4089
+val_iou: 0.9277
+
+Epoch 00105: val_iou did not improve from 0.92810
+Epoch 106/200
+1581/1580 [==============================] - 351s 222ms/step - loss: 1.4326 - val_loss: 19.6985
+val_iou: 0.9277
+
+Epoch 00106: val_iou did not improve from 0.92810
+Epoch 107/200
+1581/1580 [==============================] - 351s 222ms/step - loss: 1.4374 - val_loss: 32.4627
+val_iou: 0.9277
+
+Epoch 00107: val_iou did not improve from 0.92810
+
+Epoch 00107: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 108/200
+1581/1580 [==============================] - 359s 227ms/step - loss: 1.4274 - val_loss: 17.9239
+val_iou: 0.9277
+
+Epoch 00108: val_iou did not improve from 0.92810
+Epoch 109/200
+1581/1580 [==============================] - 354s 224ms/step - loss: 1.4368 - val_loss: 12.6263
+val_iou: 0.9277
+
+Epoch 00109: val_iou did not improve from 0.92810
+Epoch 110/200
+1581/1580 [==============================] - 355s 224ms/step - loss: 1.4385 - val_loss: 9.4552
+val_iou: 0.9276
+
+Epoch 00110: val_iou did not improve from 0.92810
+Epoch 111/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4467 - val_loss: 21.0741
+val_iou: 0.9277
+
+Epoch 00111: val_iou did not improve from 0.92810
+Epoch 112/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4350 - val_loss: 15.3240
+val_iou: 0.9277
+
+Epoch 00112: val_iou did not improve from 0.92810
+Epoch 113/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4346 - val_loss: 15.0005
+val_iou: 0.9279
+
+Epoch 00113: val_iou did not improve from 0.92810
+Epoch 114/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4428 - val_loss: 16.8412
+val_iou: 0.9275
+
+Epoch 00114: val_iou did not improve from 0.92810
+Epoch 115/200
+1581/1580 [==============================] - 341s 216ms/step - loss: 1.4365 - val_loss: 11.7655
+val_iou: 0.9277
+
+Epoch 00115: val_iou did not improve from 0.92810
+Epoch 116/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4419 - val_loss: 9.8595
+val_iou: 0.9276
+
+Epoch 00116: val_iou did not improve from 0.92810
+Epoch 117/200
+1581/1580 [==============================] - 358s 226ms/step - loss: 1.4329 - val_loss: 39.4997
+val_iou: 0.9277
+
+Epoch 00117: val_iou did not improve from 0.92810
+
+Epoch 00117: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 118/200
+1581/1580 [==============================] - 362s 229ms/step - loss: 1.4324 - val_loss: 6.4677
+val_iou: 0.9277
+
+Epoch 00118: val_iou did not improve from 0.92810
+Epoch 119/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4340 - val_loss: 13.0246
+val_iou: 0.9276
+
+Epoch 00119: val_iou did not improve from 0.92810
+Epoch 120/200
+1581/1580 [==============================] - 347s 220ms/step - loss: 1.4323 - val_loss: 11.1834
+val_iou: 0.9276
+
+Epoch 00120: val_iou did not improve from 0.92810
+Epoch 121/200
+1581/1580 [==============================] - 368s 233ms/step - loss: 1.4371 - val_loss: 13.0771
+val_iou: 0.9277
+
+Epoch 00121: val_iou did not improve from 0.92810
+Epoch 122/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4323 - val_loss: 12.6633
+val_iou: 0.9276
+
+Epoch 00122: val_iou did not improve from 0.92810
+Epoch 123/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4308 - val_loss: 12.9657
+val_iou: 0.9277
+
+Epoch 00123: val_iou did not improve from 0.92810
+Epoch 124/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 1.4368 - val_loss: 11.5429
+val_iou: 0.9277
+
+Epoch 00124: val_iou did not improve from 0.92810
+Epoch 125/200
+1581/1580 [==============================] - 344s 218ms/step - loss: 1.4344 - val_loss: 12.3639
+val_iou: 0.9277
+
+Epoch 00125: val_iou did not improve from 0.92810
+Epoch 126/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4353 - val_loss: 10.8627
+val_iou: 0.9277
+
+Epoch 00126: val_iou did not improve from 0.92810
+Epoch 127/200
+1581/1580 [==============================] - 342s 216ms/step - loss: 1.4283 - val_loss: 11.4497
+val_iou: 0.9277
+
+Epoch 00127: val_iou did not improve from 0.92810
+
+Epoch 00127: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 128/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4412 - val_loss: 12.0801
+val_iou: 0.9277
+
+Epoch 00128: val_iou did not improve from 0.92810
+Epoch 129/200
+1581/1580 [==============================] - 357s 226ms/step - loss: 1.4365 - val_loss: 13.4099
+val_iou: 0.9277
+
+Epoch 00129: val_iou did not improve from 0.92810
+Epoch 130/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 1.4376 - val_loss: 12.3036
+val_iou: 0.9277
+
+Epoch 00130: val_iou did not improve from 0.92810
+Epoch 131/200
+1581/1580 [==============================] - 343s 217ms/step - loss: 1.4262 - val_loss: 14.8774
+val_iou: 0.9277
+
+Epoch 00131: val_iou did not improve from 0.92810
+Epoch 132/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4323 - val_loss: 9.1093
+val_iou: 0.9276
+
+Epoch 00132: val_iou did not improve from 0.92810
+Epoch 133/200
+
+1581/1580 [==============================] - 354s 224ms/step - loss: 1.4352 - val_loss: 8.0897
+val_iou: 0.9277
+
+Epoch 00133: val_iou did not improve from 0.92810
+Epoch 134/200
+1581/1580 [==============================] - 364s 230ms/step - loss: 1.4362 - val_loss: 10.6149
+val_iou: 0.9277
+
+Epoch 00134: val_iou did not improve from 0.92810
+Epoch 135/200
+1581/1580 [==============================] - 350s 221ms/step - loss: 1.4303 - val_loss: 12.5542
+val_iou: 0.9276
+
+Epoch 00135: val_iou did not improve from 0.92810
+Epoch 136/200
+1581/1580 [==============================] - 347s 219ms/step - loss: 1.4388 - val_loss: 9.1517
+val_iou: 0.9277
+
+Epoch 00136: val_iou did not improve from 0.92810
+Epoch 137/200
+1581/1580 [==============================] - 347s 219ms/step - loss: 1.4358 - val_loss: 9.7333
+val_iou: 0.9277
+
+Epoch 00137: val_iou did not improve from 0.92810
+
+Epoch 00137: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 138/200
+1581/1580 [==============================] - 365s 231ms/step - loss: 1.4351 - val_loss: 11.0692
+val_iou: 0.9277
+
+Epoch 00138: val_iou did not improve from 0.92810
+Epoch 139/200
+1581/1580 [==============================] - 347s 220ms/step - loss: 1.4339 - val_loss: 10.1601
+val_iou: 0.9276
+
+Epoch 00139: val_iou did not improve from 0.92810
+Epoch 140/200
+1581/1580 [==============================] - 350s 222ms/step - loss: 1.4378 - val_loss: 11.5411
+val_iou: 0.9277
+
+Epoch 00140: val_iou did not improve from 0.92810
+Epoch 141/200
+1581/1580 [==============================] - 370s 234ms/step - loss: 1.4338 - val_loss: 15.4357
+val_iou: 0.9277
+
+Epoch 00141: val_iou did not improve from 0.92810
+Epoch 142/200
+1581/1580 [==============================] - 351s 222ms/step - loss: 1.4380 - val_loss: 6.9191
+val_iou: 0.9277
+
+Epoch 00142: val_iou did not improve from 0.92810
+Epoch 143/200
+1581/1580 [==============================] - 352s 223ms/step - loss: 1.4332 - val_loss: 19.0026
+val_iou: 0.9277
+
+Epoch 00143: val_iou did not improve from 0.92810
+Epoch 144/200
+1581/1580 [==============================] - 347s 219ms/step - loss: 1.4379 - val_loss: 13.1000
+val_iou: 0.9277
+
+Epoch 00144: val_iou did not improve from 0.92810
+Epoch 145/200
+1581/1580 [==============================] - 353s 223ms/step - loss: 1.4369 - val_loss: 7.2318
+val_iou: 0.9277
+
+Epoch 00145: val_iou did not improve from 0.92810
+Epoch 146/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4337 - val_loss: 12.6368
+val_iou: 0.9277
+
+Epoch 00146: val_iou did not improve from 0.92810
+Epoch 147/200
+1581/1580 [==============================] - 350s 221ms/step - loss: 1.4364 - val_loss: 13.6401
+val_iou: 0.9278
+
+Epoch 00147: val_iou did not improve from 0.92810
+
+Epoch 00147: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 148/200
+1581/1580 [==============================] - 363s 230ms/step - loss: 1.4260 - val_loss: 17.9515
+val_iou: 0.9277
+
+Epoch 00148: val_iou did not improve from 0.92810
+Epoch 149/200
+1581/1580 [==============================] - 364s 230ms/step - loss: 1.4336 - val_loss: 18.2666
+val_iou: 0.9276
+
+Epoch 00149: val_iou did not improve from 0.92810
+Epoch 150/200
+1581/1580 [==============================] - 350s 222ms/step - loss: 1.4294 - val_loss: 13.9185
+val_iou: 0.9277
+
+Epoch 00150: val_iou did not improve from 0.92810
+Epoch 151/200
+1581/1580 [==============================] - 356s 225ms/step - loss: 1.4287 - val_loss: 15.1464
+val_iou: 0.9277
+
+Epoch 00151: val_iou did not improve from 0.92810
+Epoch 152/200
+1581/1580 [==============================] - 369s 233ms/step - loss: 1.4305 - val_loss: 28.9735
+val_iou: 0.9277
+
+Epoch 00152: val_iou did not improve from 0.92810
+Epoch 153/200
+1581/1580 [==============================] - 367s 232ms/step - loss: 1.4350 - val_loss: 16.0807
+val_iou: 0.9276
+
+Epoch 00153: val_iou did not improve from 0.92810
+Epoch 154/200
+1581/1580 [==============================] - 357s 226ms/step - loss: 1.4309 - val_loss: 9.1025
+val_iou: 0.9277
+
+Epoch 00154: val_iou did not improve from 0.92810
+Epoch 155/200
+1581/1580 [==============================] - 349s 221ms/step - loss: 1.4292 - val_loss: 19.7131
+val_iou: 0.9276
+
+Epoch 00155: val_iou did not improve from 0.92810
+Epoch 156/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4341 - val_loss: 12.7890
+val_iou: 0.9277
+
+Epoch 00156: val_iou did not improve from 0.92810
+Epoch 157/200
+1581/1580 [==============================] - 348s 220ms/step - loss: 1.4386 - val_loss: 8.2059
+val_iou: 0.9276
+
+Epoch 00157: val_iou did not improve from 0.92810
+
+Epoch 00157: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 158/200
+1581/1580 [==============================] - 349s 220ms/step - loss: 1.4315 - val_loss: 14.7558
+val_iou: 0.9277
+
+Epoch 00158: val_iou did not improve from 0.92810
+Epoch 159/200
+1581/1580 [==============================] - 358s 227ms/step - loss: 1.4349 - val_loss: 12.5129
+val_iou: 0.9277
+
+Epoch 00159: val_iou did not improve from 0.92810
+Epoch 160/200
+1581/1580 [==============================] - 346s 219ms/step - loss: 1.4316 - val_loss: 10.8677
+val_iou: 0.9277
+
+Epoch 00160: val_iou did not improve from 0.92810
+Epoch 161/200
+1581/1580 [==============================] - 356s 225ms/step - loss: 1.4339 - val_loss: 10.4096
+val_iou: 0.9277
+
+Epoch 00161: val_iou did not improve from 0.92810
+Epoch 162/200
+1581/1580 [==============================] - 370s 234ms/step - loss: 1.4356 - val_loss: 8.2214
+val_iou: 0.9277
+
+Epoch 00162: val_iou did not improve from 0.92810
+Epoch 163/200
+1581/1580 [==============================] - 344s 218ms/step - loss: 1.4327 - val_loss: 11.8573
+val_iou: 0.9277
+
+Epoch 00163: val_iou did not improve from 0.92810
+Epoch 164/200
+1581/1580 [==============================] - 344s 217ms/step - loss: 1.4324 - val_loss: 11.6609
+val_iou: 0.9277
+
+Epoch 00164: val_iou did not improve from 0.92810
+Epoch 165/200
+1581/1580 [==============================] - 347s 219ms/step - loss: 1.4327 - val_loss: 15.7630
+val_iou: 0.9277
+
+Epoch 00165: val_iou did not improve from 0.92810
+Epoch 166/200
+1581/1580 [==============================] - 347s 220ms/step - loss: 1.4271 - val_loss: 10.9618
+val_iou: 0.9277
+
+Epoch 00166: val_iou did not improve from 0.92810
+Epoch 167/200
+1581/1580 [==============================] - 345s 218ms/step - loss: 1.4289 - val_loss: 14.7956
+val_iou: 0.9276
+
+Epoch 00167: val_iou did not improve from 0.92810
+
+Epoch 00167: ReduceLROnPlateau reducing learning rate to 1e-07.
+Epoch 168/200
+1581/1580 [==============================] - 377s 238ms/step - loss: 1.4297 - val_loss: 16.3333
+val_iou: 0.9278
