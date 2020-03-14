@@ -37,12 +37,12 @@ After you got a camera you only need to access the root project directory and la
 
 ## How to test the model without a webcam
 You only need to access the root project directory and launch:
-`python image_face_detector.py input_image_path outputdir`.
+`python image_face_detector.py input_image_path`.
 
-# Problems and future improvement
+## Problems and future improvement
 The classifier submodel hasn't a great accuracy because of the low variation of faces that were feed to it in training phase.
 Indeed you can test the model without the classifier by simply commenting and moving a few lines of code in 
 `webcam_face_detector.py` or in `input_image_path outputdir` and you should see a greater performance in detection.
-The future improvement is to retrain the classifier submodule with an increased dataset that contains a greater variation in faces position and orientation.
+The future improvement is to repeate the classifier training with an increased dataset that contains a greater variation in faces position and orientation.
 
 
