@@ -6,5 +6,9 @@ first_CNN.ipynb
 transfer_learning.ipynb
 test.jpg
 /.ipynb_checkpoints/*
-*.h5
+weights/mobile_net_class.h5
+weights/mobile_net_seconda_passata.h5
 *.json
+*.txt
+*.jpg
+*.csv
