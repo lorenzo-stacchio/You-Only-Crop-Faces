@@ -55,7 +55,7 @@ while True:
         print(box)
 
         #if prediction is 0, which means I am missing on the image, then show the frame in gray color.
-        if face >= 0.5:
+        if face >= 0.7:
                 #rescale box to original size
                 x_1, x_2 = int(box[0]*rescale_factor_width),int(box[1]*rescale_factor_heigth)
                 x_3, x_4 = int(box[0]*rescale_factor_width+box[2]*rescale_factor_width), int(box[1]*rescale_factor_heigth+box[3]*rescale_factor_heigth)
