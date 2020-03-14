@@ -23,9 +23,11 @@ The guess has the following format:
 `[x_top_left, y_top_left, width, height]`
 This model was built using a Fully Convolution approach.
 This model is a TF model, that use [MobileNetV2 architecture](https://arxiv.org/pdf/1801.04381.pdf) pretrained with [image-net](http://www.image-net.org/).
+It was trained using a single dataset: 
 - [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
 
 ## Requirements
+- Support for tensorflow GPU (this should probably work on tensorflow CPU too, but not tested);
 - Python 3.6 or greater;
 - All pip packages listed in [requirements](requirements.txt).
 
@@ -34,7 +36,13 @@ After you got a camera you only need to access the root project directory and la
 `python webcam_face_detector.py`.
 
 ## How to test the model without a webcam
-This section will be available soon.
+You only need to access the root project directory and launch:
+`python image_face_detector.py input_image_path outputdir`.
 
+# Problems and future improvement
+The classifier submodel hasn't a great accuracy because of the low variation of faces that were feed to it in training phase.
+Indeed you can test the model without the classifier by simply commenting and moving a few lines of code in 
+`webcam_face_detector.py` or in `input_image_path outputdir` and you should see a greater performance in detection.
+The future improvement is to retrain the classifier submodule with an increased dataset that contains a greater variation in faces position and orientation.
 
 
