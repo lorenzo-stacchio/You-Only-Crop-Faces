@@ -1,4 +1,4 @@
-# Single Face Detector
+# You Only Crop Faces
 Deep neural network model developed in colab with [@Lemonzino](https://github.com/Lemonzino) as our Machine Learning course project at Alma Mater Studiorum University.
 This model is able to recognize the presence of a face in a pic and guess the area of photo in which it is.
 
