@@ -10,5 +10,4 @@ weights/mobile_net_class.h5
 weights/mobile_net_seconda_passata.h5
 *.json
 *.txt
-*.jpg
 *.csv
